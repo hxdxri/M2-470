@@ -1,0 +1,277 @@
+                                 
+                                 
+┌───────────────────────────────┐
+│ 21 Non-blocking Code Findings │
+└───────────────────────────────┘
+                                                                                                                        
+  [36m[22m[24m                                                                                                          
+  guava/android/guava-testlib/src/com/google/common/collect/testing/ReserializingTestCollectionGenerator.java[0m        
+    ❯❱ java.lang.security.audit.object-deserialization.object-deserialization
+          Found object deserialization using ObjectInputStream. Deserializing entire Java objects is dangerous
+          because malicious actors can create Java object streams with unintended consequences. Ensure that   
+          the objects being deserialized are not user-controlled. If this must be done, consider using HMACs  
+          to sign the data stream to make sure it is not tampered with, or consider only transmitting object  
+          fields and populating a new object.                                                                 
+          Details: https://sg.run/Ek0A                                                                        
+                                                                                                              
+           59┆ ObjectInputStream in = new ObjectInputStream(new
+               ByteArrayInputStream(bytes.toByteArray()));     
+                                                                                          
+  [36m[22m[24m  guava/android/guava-testlib/src/com/google/common/testing/Platform.java[0m
+    ❯❱ java.lang.security.audit.object-deserialization.object-deserialization
+          Found object deserialization using ObjectInputStream. Deserializing entire Java objects is dangerous
+          because malicious actors can create Java object streams with unintended consequences. Ensure that   
+          the objects being deserialized are not user-controlled. If this must be done, consider using HMACs  
+          to sign the data stream to make sure it is not tampered with, or consider only transmitting object  
+          fields and populating a new object.                                                                 
+          Details: https://sg.run/Ek0A                                                                        
+                                                                                                              
+           46┆ ObjectInputStream in = new ObjectInputStream(new
+               ByteArrayInputStream(bytes.toByteArray()));     
+                                                                                                 
+  [36m[22m[24m  guava/android/guava-tests/benchmark/com/google/common/base/EnumsBenchmark.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+           49┆ Class.forName(EnumsBenchmark.class.getCanonicalName() + "$" + enumSize + "Enum")
+                                                                                                                  
+  [36m[22m[24m  guava/android/guava-tests/benchmark/com/google/common/hash/MessageDigestAlgorithmBenchmark.java[0m
+    ❯❱ java.lang.security.audit.crypto.weak-random.weak-random
+          Detected use of the functions `Math.random()` or `java.util.Random()`. These are both not      
+          cryptographically strong random number generators (RNGs). If you are using these RNGs to create
+          passwords or secret tokens, use `java.security.SecureRandom` instead.                          
+          Details: https://sg.run/NwBp                                                                   
+                                                                                                         
+          104┆ private static final int RANDOM_SEED = new Random().nextInt();
+            ⋮┆----------------------------------------
+          111┆ new Random(RANDOM_SEED).nextBytes(testBytes);
+                                                                                                              
+  [36m[22m[24m  guava/android/guava-tests/benchmark/com/google/common/util/concurrent/MonitorBenchmark.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+           51┆ Constructor<?> constructor = Class.forName(className).getConstructor(int.class);
+                                                                                 
+  [36m[22m[24m  guava/android/guava/src/com/google/common/base/Throwables.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          343┆ throwable.printStackTrace(new PrintWriter(stringWriter));
+                                                                                           
+  [36m[22m[24m  guava/android/guava/src/com/google/common/io/FileBackedOutputStream.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          141┆ t.printStackTrace(System.err);
+                                                                                          
+  [36m[22m[24m  guava/android/guava/src/com/google/common/primitives/UnsignedBytes.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+          477┆ Class.forName(UNSAFE_COMPARATOR_NAME).asSubclass(LexicographicalComparator.class);
+                                                                                    
+  [36m[22m[24m  guava/android/guava/src/com/google/common/reflect/Reflection.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+           63┆ Class.forName(clazz.getName(), true, clazz.getClassLoader());
+                                                                                                                      
+  [36m[22m[24m  guava/guava-testlib/src/com/google/common/collect/testing/ReserializingTestCollectionGenerator.java[0m
+    ❯❱ java.lang.security.audit.object-deserialization.object-deserialization
+          Found object deserialization using ObjectInputStream. Deserializing entire Java objects is dangerous
+          because malicious actors can create Java object streams with unintended consequences. Ensure that   
+          the objects being deserialized are not user-controlled. If this must be done, consider using HMACs  
+          to sign the data stream to make sure it is not tampered with, or consider only transmitting object  
+          fields and populating a new object.                                                                 
+          Details: https://sg.run/Ek0A                                                                        
+                                                                                                              
+           59┆ ObjectInputStream in = new ObjectInputStream(new
+               ByteArrayInputStream(bytes.toByteArray()));     
+                                                                                  
+  [36m[22m[24m  guava/guava-testlib/src/com/google/common/testing/Platform.java[0m
+    ❯❱ java.lang.security.audit.object-deserialization.object-deserialization
+          Found object deserialization using ObjectInputStream. Deserializing entire Java objects is dangerous
+          because malicious actors can create Java object streams with unintended consequences. Ensure that   
+          the objects being deserialized are not user-controlled. If this must be done, consider using HMACs  
+          to sign the data stream to make sure it is not tampered with, or consider only transmitting object  
+          fields and populating a new object.                                                                 
+          Details: https://sg.run/Ek0A                                                                        
+                                                                                                              
+           46┆ ObjectInputStream in = new ObjectInputStream(new
+               ByteArrayInputStream(bytes.toByteArray()));     
+                                                                                         
+  [36m[22m[24m  guava/guava-tests/benchmark/com/google/common/base/EnumsBenchmark.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+           49┆ Class.forName(EnumsBenchmark.class.getCanonicalName() + "$" + enumSize + "Enum")
+                                                                                                          
+  [36m[22m[24m  guava/guava-tests/benchmark/com/google/common/hash/MessageDigestAlgorithmBenchmark.java[0m
+    ❯❱ java.lang.security.audit.crypto.weak-random.weak-random
+          Detected use of the functions `Math.random()` or `java.util.Random()`. These are both not      
+          cryptographically strong random number generators (RNGs). If you are using these RNGs to create
+          passwords or secret tokens, use `java.security.SecureRandom` instead.                          
+          Details: https://sg.run/NwBp                                                                   
+                                                                                                         
+          104┆ private static final int RANDOM_SEED = new Random().nextInt();
+            ⋮┆----------------------------------------
+          111┆ new Random(RANDOM_SEED).nextBytes(testBytes);
+                                                                                                      
+  [36m[22m[24m  guava/guava-tests/benchmark/com/google/common/util/concurrent/MonitorBenchmark.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+           51┆ Constructor<?> constructor = Class.forName(className).getConstructor(int.class);
+                                                                         
+  [36m[22m[24m  guava/guava/src/com/google/common/base/Throwables.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          343┆ throwable.printStackTrace(new PrintWriter(stringWriter));
+                                                                                   
+  [36m[22m[24m  guava/guava/src/com/google/common/io/FileBackedOutputStream.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          141┆ t.printStackTrace(System.err);
+                                                                                  
+  [36m[22m[24m  guava/guava/src/com/google/common/primitives/UnsignedBytes.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+          484┆ Class.forName(UNSAFE_COMPARATOR_NAME).asSubclass(LexicographicalComparator.class);
+                                                                            
+  [36m[22m[24m  guava/guava/src/com/google/common/reflect/Reflection.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+           63┆ Class.forName(clazz.getName(), true, clazz.getClassLoader());
+                                                                                           
+  [36m[22m[24m  guava/guava/src/com/google/common/util/concurrent/FuturesGetChecked.java[0m
+    ❯❱ java.lang.security.audit.unsafe-reflection.unsafe-reflection
+          If an attacker can supply values that the application then uses to determine which class to        
+          instantiate or which method to invoke, the potential exists for the attacker to create control flow
+          paths through the application that were not intended by the application developers. This attack    
+          vector may allow the attacker to bypass authentication or access control checks or otherwise cause 
+          the application to behave in an unexpected manner.                                                 
+          Details: https://sg.run/R8X8                                                                       
+                                                                                                             
+          193┆ Class.forName(CLASS_VALUE_VALIDATOR_NAME).asSubclass(Enum.class);
+
+
+
+ef5137cf6ffa:/workspace/guava-static-analysis# semgrep ci --subdir guava --no-suppress-errors >> ./logs/semgrep-ci.log
+WARNING: `semgrep ci` is meant to be run from the root of a git repo.
+When `semgrep ci` is not run from a git repo, it will not be able to perform all operations.
+When `semgrep ci` is run from a git repo, but not the root, links in the uploaded findings may be broken.
+
+To run `semgrep ci` on only a subdirectory of a git repo, see `--subdir`.
+                  
+                  
+┌────────────────┐
+│ Debugging Info │
+└────────────────┘
+                  
+  SCAN ENVIRONMENT
+  versions    - semgrep 1.149.0 on python 3.12.12                      
+  environment - running in environment git, triggering event is unknown
+            
+  CONNECTION
+  Initializing scan (deployment=vrl968-usask-ca, scan_id=127064082)  
+  Enabled products: Code, Supply Chain                                                                                                                                                       
+        
+        
+  ENGINE
+  Using Semgrep Pro Version: 1.149.0
+  Installed at /opt/semgrep-venv/lib/python3.12/site-packages/semgrep/bin/semgrep-core-proprietary
+                                                                                                                        
+                                                                                                                        
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 2070 files tracked by git with 2504 Code rules:
+                                                                                                                        
+  Language      Rules   Files          Origin      Rules                                                                
+ ─────────────────────────────        ───────────────────                                                               
+  <multilang>      62    2070          Pro rules    1440                                                                
+  java            264    1998          Community    1064                                                                
+  yaml             31       6                                                                                           
+  bash              4       6                                                                                           
+  js              327       2                                                                                           
+  kotlin           79       2                                                                                           
+  json              4       1                                                                                           
+  html              1       1                                                                                           
+                                                                                                                        
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:02                                                                                                                        
+  Uploading scan results  
+  Finalizing scan                                                                                                                                 
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ CI scan completed successfully.
+ • Findings: 21 (0 blocking)
+ • Rules run: 112666
+ • Targets scanned: 2070
+ • Parsed lines: ~99.9%
+ • Scan skipped: 
+   ◦ Files matching .semgrepignore patterns: 1259
+ • Scan was limited to files tracked by git
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+CI scan completed successfully.
+  View results in Semgrep Cloud Platform:
+    https://semgrep.dev/orgs/vrl968-usask-ca/findings?repo=local_scan/workspace/guava&ref=haidari
+    https://semgrep.dev/orgs/vrl968-usask-ca/supply-chain/vulnerabilities?repo=local_scan/workspace/guava&ref=haidari
+  No blocking findings so exiting with code 0
+ef5137cf6ffa:/workspace/guava-static-analysis# 
