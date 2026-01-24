@@ -1,0 +1,87 @@
+                   
+                   
+┌─────────────────┐
+│ 5 Code Findings │
+└─────────────────┘
+                             
+  [36m[22m[24m  Dockerfile[0m
+   ❯❯❱ dockerfile.security.missing-user.missing-user
+          By not specifying a USER, a program in the container may run as 'root'. This is a security hazard.
+          If an attacker can control a process running as root, they may have control over the container.   
+          Ensure that the last USER in a Dockerfile is a USER other than 'root'.                            
+          Details: https://sg.run/Gbvn                                                                      
+                                                                                                            
+           ▶▶┆ Autofix ▶ USER non-root CMD ["bash"]
+           33┆ CMD ["bash"]
+                                                                                 
+  [36m[22m[24m  guava/android/guava/src/com/google/common/base/Throwables.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          343┆ throwable.printStackTrace(new PrintWriter(stringWriter));
+                                                                                           
+  [36m[22m[24m  guava/android/guava/src/com/google/common/io/FileBackedOutputStream.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          141┆ t.printStackTrace(System.err);
+                                                                         
+  [36m[22m[24m  guava/guava/src/com/google/common/base/Throwables.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          343┆ throwable.printStackTrace(new PrintWriter(stringWriter));
+                                                                                   
+  [36m[22m[24m  guava/guava/src/com/google/common/io/FileBackedOutputStream.java[0m
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+          141┆ t.printStackTrace(System.err);
+
+
+
+24dd2e591049:/workspace# semgrep --config p/owasp-top-ten --no-git-ignore . > logs/semgrep-top10.log
+                                                                                                                        
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 2075 files with 1917 Code rules:
+                                                                                                                        
+  Language      Rules   Files          Origin      Rules                                                                
+ ─────────────────────────────        ───────────────────                                                               
+  <multilang>       6    2075          Pro rules    1374                                                                
+  java            206    1998          Community     543                                                                
+  yaml             19       6                                                                                           
+  bash              1       6                                                                                           
+  js              233       2                                                                                           
+  kotlin           70       2                                                                                           
+  dockerfile        4       1                                                                                           
+  json              3       1                                                                                           
+  html              1       1                                                                                           
+                                                                                                                        
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:26                                                                                                                        
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 5 (5 blocking)
+ • Rules run: 539
+ • Targets scanned: 2075
+ • Parsed lines: ~99.9%
+ • Scan skipped: 
+   ◦ Files matching .semgrepignore patterns: 6
+ • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Ran 539 rules on 2075 files: 5 findings.
+24dd2e591049:/workspace# 
