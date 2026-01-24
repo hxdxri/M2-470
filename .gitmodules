@@ -1,0 +1,3 @@
+[submodule "guava-static-analysis/guava"]
+	path = guava-static-analysis/guava
+	url = https://github.com/google/guava.git

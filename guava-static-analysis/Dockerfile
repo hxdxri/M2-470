@@ -9,7 +9,7 @@ ARG SEMGREP_VERSION=1.94.0
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        openjdk-17-jre-headless \
+        openjdk-17-jdk-headless \
         python3 \
         python3-pip \
         curl \
