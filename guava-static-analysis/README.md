@@ -39,8 +39,6 @@ docker build -t guava-static-analysis:latest .
 ```
 
 ## Notes
-- The scripts target `guava/src/com/google/common` only, matching the scope definition.
 - Checkstyle output: `results/checkstyle/checkstyle.xml`
 - Semgrep output: `results/semgrep/semgrep.json`
 - CK outputs CSVs to `results/ck/`
-- If CK argument conventions change, adjust `scripts/run-ck.sh` to match your preferred CK invocation.
