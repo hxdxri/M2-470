@@ -32,13 +32,27 @@ cd guava-static-analysis
 git clone https://github.com/google/guava.git guava
 ```
 
-2) Build the container:
+2) Build the container (from the project root):
 ```
 docker build -t guava-static-analysis:latest .
 ```
 ```
 
+## Checkstyle extension
+3) Start an interactive shell inside the container:
+```
+docker run --rm -it -v "$(pwd)":/workspace -w /workspace guava-static-analysis:latest bash
+```
+```
+
+4) Run checkstyle inside the container using the google's checkstyle rules
+```
+java -jar /opt/tools/checkstyle-10.12.4-all.jar -c config/google_checks.xml guava/guava/src/com/google/common -f xml -o results/checkstyle/checkstyle_result.xml
+```
+```
+
+
 ## Notes
-- Checkstyle output: `results/checkstyle/checkstyle.xml`
+- Checkstyle output: `results/checkstyle/checkstyle_result.xml`
 - Semgrep output: `results/semgrep/semgrep.json`
 - CK outputs CSVs to `results/ck/`
