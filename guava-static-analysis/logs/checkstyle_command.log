@@ -1,0 +1,136 @@
+PS C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470> ls
+
+
+    Directory: C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2026-01-25   1:14 PM                guava-static-analysis
+d-----        2026-01-25   1:52 PM                guava-static-analysis;C
+-a----        2026-01-25  12:56 PM              6 .gitignore
+-a----        2026-01-25  12:53 PM              4 README.md
+
+
+PS C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470> cd guava-static-analysis
+PS C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470\guava-static-analysis> ls
+
+
+    Directory: C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470\guava-static-analysis
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2026-01-25   1:17 PM                config
+d-----        2026-01-25   1:03 PM                guava
+-a----        2026-01-25   1:19 PM           1214 Dockerfile
+-a----        2026-01-25  12:53 PM           1212 README.md
+
+
+PS C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470\guava-static-analysis> ls
+
+    Directory: C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470\guava-static-analysis
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2026-01-25   1:17 PM                config
+d-----        2026-01-25   1:03 PM                guava
+d-----        2026-01-25  12:53 PM                logs
+-a----        2026-01-25   1:19 PM           1214 Dockerfile
+-a----        2026-01-25  12:53 PM           1212 README.md
+
+
+PS C:\Users\User\OneDrive\Desktop\CMPT470\M2\M2-470\guava-static-analysis> docker run --rm -it -v ${PWD}:/workspace -w /workspace guava-static-analysis:latest bash                                                                                                                   tic-analysis:latest bash
+
+5e3b988dff86:/workspace#
+5e3b988dff86:/workspace# ds
+bash: ds: command not found
+5e3b988dff86:/workspace# mkdir -p logs results/checkstyle
+5e3b988dff86:/workspace# date -Is | tee logs/checkstyle_meta.txt
+2026-01-25T19:57:31+00:00
+5e3b988dff86:/workspace# uname -a | tee -a logs/checkstyle_meta.txt
+Linux 5e3b988dff86 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 Linux
+5e3b988dff86:/workspace# java -version 2>&1 | tee -a logs/checkstyle_meta.txt
+openjdk version "17.0.18" 2026-01-20 LTS
+OpenJDK Runtime Environment Corretto-17.0.18.8.1 (build 17.0.18+8-LTS)
+OpenJDK 64-Bit Server VM Corretto-17.0.18.8.1 (build 17.0.18+8-LTS, mixed mode, sharing)
+5e3b988dff86:/workspace# java -jar /opt/tools/checkstyle-10.12.4-all.jar -v 2>&1 | tee -a logs/checkstyle_meta.txt
+Missing required parameter: '<files>'
+Usage: checkstyle [OPTIONS]... FILES...
+Try 'checkstyle --help' for more information.
+5e3b988dff86:/workspace# java -jar /opt/tools/checkstyle-10.12.4-all.jar -v 2>&1 | tee -a logs/checkstyle_meta.txt
+Missing required parameter: '<files>'
+Usage: checkstyle [OPTIONS]... FILES...
+Try 'checkstyle --help' for more information.
+5e3b988dff86:/workspace# java -jar /opt/tools/checkstyle-10.12.4-all.jar --help | head -n 5 \
+>   | tee -a logs/checkstyle_meta.txt
+Usage: checkstyle [-dEghjJtTV] [-b=<xpath>] [-c=<configurationFile>] [-f=<format>]
+                  [-o=<outputPath>] [-p=<propertiesFile>] [-s=<suppressionLineColumnNumber>]
+                  [-w=<tabWidth>] [-e=<exclude>]... [-x=<excludeRegex>]... <files>...
+Checkstyle verifies that the specified source code files adhere to the specified rules. By default,
+violations are reported to standard out in plain format. Checkstyle requires a configuration XML
+5e3b988dff86:/workspace# time java -jar /opt/tools/checkstyle-10.12.4-all.jar \
+>   -c config/google_checks.xml \
+>   guava/src/com/google/common \
+>   -f xml -o results/checkstyle/checkstyle_result.xml \
+>   2>&1 | tee logs/checkstyle_command.log
+Files to process must be specified, found 0.
+
+real    0m0.390s
+user    0m0.511s
+sys     0m0.123s
+5e3b988dff86:/workspace# time java -jar /opt/tools/checkstyle-10.12.4-all.jar   -c config/google_checks.xml   guava/src/com/google/common  
+ -f xml -o results/checkstyle/checkstyle_result.xml   2>&1 | tee logs/checkstyle_command.log
+Files to process must be specified, found 0.
+
+real    0m0.339s
+user    0m0.487s
+sys     0m0.078s
+5e3b988dff86:/workspace# time java -jar /opt/tools/checkstyle-10.12.4-all.jar -c config/google_checks.xml guava/src/com/google/common -f xml -o results/checkstyle/checkstyle_result.xml 2>&1 | tee logs/checkstyle_command.log
+Files to process must be specified, found 0.
+
+real    0m0.406s
+user    0m0.511s
+sys     0m0.132s
+5e3b988dff86:/workspace# ls guava/src/com/google/common | head
+ls: guava/src/com/google/common: No such file or directory
+5e3b988dff86:/workspace# ls guava/src/com/google/common
+ls: guava/src/com/google/common: No such file or directory
+5e3b988dff86:/workspace# ls guava/guava/src/com/google/common
+annotations  cache        escape       graph        html         math         primitives   util
+base         collect      eventbus     hash         io           net          reflect      xml
+5e3b988dff86:/workspace# time java -jar /opt/tools/checkstyle-10.12.4-all.jar -c config/google_checks.xml guava/guava/src/com/google/common -f xml -o results/checkstyle/checkstyle_result.xml 2>&1 | tee logs/checkstyle_command.log
+
+real    2m3.780s
+user    2m39.690s
+sys     0m19.784s
+
+5e3b988dff86:/workspace# grep -c "<error " results/checkstyle/checkstyle_result.xml
+804
+5e3b988dff86:/workspace# grep -o 'source="[^"]*"' results/checkstyle/checkstyle_result.xml  | sort | uniq -c | sort -nr | head -n 15       
+    221 source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    110 source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocParagraphCheck"
+     70 source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+     45 source="com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck"
+     37 source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+     31 source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+     30 source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"
+     29 source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+     28 source="com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheck"
+     28 source="com.puppycrawl.tools.checkstyle.checks.javadoc.RequireEmptyLineBeforeBlockTagGroupCheck"
+     28 source="com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+     28 source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheck"
+     24 source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+     20 source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+     15 source="com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheck"
+
+
+2026-01-25T19:57:31+00:00
+
+Linux 5e3b988dff86 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 Linux
+openjdk version "17.0.18" 2026-01-20 LTS
+OpenJDK Runtime Environment Corretto-17.0.18.8.1 (build 17.0.18+8-LTS)
+OpenJDK 64-Bit Server VM Corretto-17.0.18.8.1 (build 17.0.18+8-LTS, mixed mode, sharing)
+
+Checkstyle version: 10.12.4

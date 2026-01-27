@@ -26,6 +26,9 @@ RUN apk add --no-cache --virtual .semgrep-build-deps \
     && ln -s /opt/semgrep-venv/bin/semgrep /usr/local/bin/semgrep \
     && apk del .semgrep-build-deps
 
+RUN mkdir -p /opt/tools \
+ && curl -L -o /opt/tools/checkstyle-${CHECKSTYLE_VERSION}-all.jar \
+    https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar
 
 WORKDIR /workspace
 RUN mkdir -p guava config scripts results logs
