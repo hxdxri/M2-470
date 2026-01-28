@@ -21,6 +21,7 @@ AI Usage:
 
 5. Ademola Obaleye (zyq049)
 Contribution: 
-AI Usage: I used ChatGPT to better understand the assignment description and the use of Checkstyle as a static analysis tool. 
-I also used it to help debug Docker and Checkstyle related errors during setup and execution. 
+AI Usage: I used chatGPT to better understand the assignment description and the use of checkstyle as a static analysis tool. 
+I used it to help debug docker and checkstyle related errors during setup and execution. 
+I used chatGPT to help generate grep commands for extracting useful information from checkstyle's XML output.
 All experiments and analysis results were produced by running the actual tools myself.
