@@ -1,0 +1,928 @@
+2026-01-28 21:55:42.346 | be5b287ecda9:/workspace# lz
+2026-01-28 21:55:42.359 | 
+2026-01-28 22:02:16.530 | be5b287ecda9:/workspace# 
+2026-01-28 22:02:17.298 | 
+2026-01-28 22:02:17.301 | 
+2026-01-28 22:02:20.006 | be5b287ecda9:/workspace# cd guava-static-analysis/
+2026-01-28 22:02:24.140 | bash: lz: command not found
+2026-01-28 22:02:24.140 | 
+2026-01-28 22:02:24.140 | be5b287ecda9:/workspace# 
+2026-01-28 22:02:24.140 | 
+2026-01-28 22:02:24.140 | be5b287ecda9:/workspace# lz
+2026-01-28 22:02:24.140 | 
+2026-01-28 22:02:24.140 | be5b287ecda9:/workspace# cd clear
+2026-01-28 22:02:24.140 | be5b287ecda9:/workspace# ls
+2026-01-28 22:02:24.140 | README.md              guava-static-analysis
+2026-01-28 22:02:29.111 | 
+2026-01-28 22:02:29.117 | be5b287ecda9:/workspace/guava-static-analysis# ls
+2026-01-28 22:02:29.117 | 
+2026-01-28 22:02:29.123 | Dockerfile                                 TechTitans_Milestone2_AI_Contribution.txt  config                                     logs
+2026-01-28 22:02:29.117 | README.md                                  ck                                         guava                                      results
+2026-01-28 22:02:32.434 | be5b287ecda9:/workspace/guava-static-analysis# cd ck
+2026-01-28 22:02:34.104 | 
+2026-01-28 22:02:34.112 | be5b287ecda9:/workspace/guava-static-analysis/ck# ls
+2026-01-28 22:02:34.111 | 
+2026-01-28 22:02:34.119 | CHANGELOG.md  LICENSE       README.md     codecov.yml   fixtures      mvnw          mvnw.cmd      pom.xml       src
+2026-01-28 22:02:45.953 | be5b287ecda9:/workspace/guava-static-analysis/ck# cd ccd guava-static-analysislscleacd guava-static-analysislsd guava-static-analysislsd cmvnw clean compile package
+2026-01-28 22:02:45.954 | 
+2026-01-28 22:02:45.953 | bash: mvnw: command not found
+2026-01-28 22:02:52.303 | be5b287ecda9:/workspace/guava-static-analysis/ck# ./mvnw clean compile packa./
+2026-01-28 22:02:52.444 | 
+2026-01-28 22:02:52.436 | Connecting to repo.maven.apache.org (104.18.18.12:443)
+2026-01-28 22:02:52.667 | saving to '/workspace/guava-static-analysis/ck/.mvn/wrapper/maven-wrapper.jar'
+2026-01-28 22:02:52.670 | 
+2026-01-28 22:02:52.661 | maven-wrapper.jar    100% |*******************************************************************************************************************************| 50710  0:00:00 ETA
+2026-01-28 22:02:52.670 | '/workspace/guava-static-analysis/ck/.mvn/wrapper/maven-wrapper.jar' saved
+2026-01-28 22:02:53.855 | [INFO] Scanning for projects...
+2026-01-28 22:02:53.930 | [INFO] 
+2026-01-28 22:02:53.936 | [INFO] --------------------< com.github.mauricioaniche:ck >--------------------
+2026-01-28 22:02:53.939 | [INFO] Building CK calculator 0.7.1-SNAPSHOT
+2026-01-28 22:02:53.944 | [INFO] --------------------------------[ jar ]---------------------------------
+2026-01-28 22:02:54.993 | [INFO] 
+2026-01-28 22:02:54.995 | [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ck ---
+2026-01-28 22:02:55.048 | [INFO] 
+2026-01-28 22:02:55.051 | [INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ ck ---
+2026-01-28 22:02:55.290 | [INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/guava-static-analysis/ck/target/jacoco.exec
+2026-01-28 22:02:55.291 | [INFO] 
+2026-01-28 22:02:55.292 | [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ck ---
+2026-01-28 22:02:55.401 | [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2026-01-28 22:02:55.403 | [INFO] skip non existing resourceDirectory /workspace/guava-static-analysis/ck/src/main/resources
+2026-01-28 22:02:55.404 | [INFO] 
+2026-01-28 22:02:55.406 | [INFO] --- maven-compiler-plugin:3.9.0:compile (default-compile) @ ck ---
+2026-01-28 22:02:56.427 | [INFO] Changes detected - recompiling the module!
+2026-01-28 22:02:56.454 | [INFO] Compiling 53 source files to /workspace/guava-static-analysis/ck/target/classes
+2026-01-28 22:03:02.429 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/WMC.java: Some input files use or override a deprecated API.
+2026-01-28 22:03:02.430 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/WMC.java: Recompile with -Xlint:deprecation for details.
+2026-01-28 22:03:02.431 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/NumberOfFields.java: Some input files use unchecked or unsafe operations.
+2026-01-28 22:03:02.432 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/NumberOfFields.java: Recompile with -Xlint:unchecked for details.
+2026-01-28 22:03:02.434 | [INFO] 
+2026-01-28 22:03:02.435 | [INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ ck ---
+2026-01-28 22:03:02.440 | [INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/guava-static-analysis/ck/target/jacoco.exec
+2026-01-28 22:03:02.442 | [INFO] 
+2026-01-28 22:03:02.445 | [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ck ---
+2026-01-28 22:03:02.447 | [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2026-01-28 22:03:02.449 | [INFO] skip non existing resourceDirectory /workspace/guava-static-analysis/ck/src/main/resources
+2026-01-28 22:03:02.449 | [INFO] 
+2026-01-28 22:03:02.450 | [INFO] --- maven-compiler-plugin:3.9.0:compile (default-compile) @ ck ---
+2026-01-28 22:03:02.883 | [INFO] Changes detected - recompiling the module!
+2026-01-28 22:03:03.105 | [INFO] Compiling 53 source files to /workspace/guava-static-analysis/ck/target/classes
+2026-01-28 22:03:07.744 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/WMC.java: Some input files use or override a deprecated API.
+2026-01-28 22:03:07.746 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/WMC.java: Recompile with -Xlint:deprecation for details.
+2026-01-28 22:03:07.755 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/NumberOfFields.java: Some input files use unchecked or unsafe operations.
+2026-01-28 22:03:07.755 | [INFO] /workspace/guava-static-analysis/ck/src/main/java/com/github/mauricioaniche/ck/metric/NumberOfFields.java: Recompile with -Xlint:unchecked for details.
+2026-01-28 22:03:07.755 | [INFO] 
+2026-01-28 22:03:07.755 | [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ck ---
+2026-01-28 22:03:07.755 | [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2026-01-28 22:03:07.772 | [INFO] Copying 1 resource
+2026-01-28 22:03:07.807 | [INFO] 
+2026-01-28 22:03:07.808 | [INFO] --- maven-compiler-plugin:3.9.0:testCompile (default-testCompile) @ ck ---
+2026-01-28 22:03:08.429 | [INFO] Changes detected - recompiling the module!
+2026-01-28 22:03:08.464 | [INFO] Compiling 58 source files to /workspace/guava-static-analysis/ck/target/test-classes
+2026-01-28 22:03:14.050 | [INFO] /workspace/guava-static-analysis/ck/src/test/java/com/github/mauricioaniche/ck/integration/IntegrationTest.java: /workspace/guava-static-analysis/ck/src/test/java/com/github/mauricioaniche/ck/integration/IntegrationTest.java uses or overrides a deprecated API.
+2026-01-28 22:03:14.051 | [INFO] /workspace/guava-static-analysis/ck/src/test/java/com/github/mauricioaniche/ck/integration/IntegrationTest.java: Recompile with -Xlint:deprecation for details.
+2026-01-28 22:03:14.051 | [INFO] 
+2026-01-28 22:03:14.052 | [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ ck ---
+2026-01-28 22:03:14.716 | [INFO] 
+2026-01-28 22:03:14.716 | [INFO] -------------------------------------------------------
+2026-01-28 22:03:14.717 | [INFO]  T E S T S
+2026-01-28 22:03:14.717 | [INFO] -------------------------------------------------------
+2026-01-28 22:03:17.619 | [INFO] Running com.github.mauricioaniche.ck.BindingsTest
+2026-01-28 22:03:21.308 | log4j:WARN No appenders could be found for logger (org.reflections.Reflections).
+2026-01-28 22:03:21.309 | log4j:WARN Please initialize the log4j system properly.
+2026-01-28 22:03:21.310 | log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2026-01-28 22:03:22.518 | [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.873 s - in com.github.mauricioaniche.ck.BindingsTest
+2026-01-28 22:03:22.519 | [INFO] Running com.github.mauricioaniche.ck.CBOTest
+2026-01-28 22:03:23.033 | [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.496 s - in com.github.mauricioaniche.ck.CBOTest
+2026-01-28 22:03:23.034 | [INFO] Running com.github.mauricioaniche.ck.ClassTypeTest
+2026-01-28 22:03:23.174 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in com.github.mauricioaniche.ck.ClassTypeTest
+2026-01-28 22:03:23.175 | [INFO] Running com.github.mauricioaniche.ck.CouplingTest
+2026-01-28 22:03:23.448 | [INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 s - in com.github.mauricioaniche.ck.CouplingTest
+2026-01-28 22:03:23.449 | [INFO] Running com.github.mauricioaniche.ck.DITTest
+2026-01-28 22:03:23.507 | [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.github.mauricioaniche.ck.DITTest
+2026-01-28 22:03:23.508 | [INFO] Running com.github.mauricioaniche.ck.EnumTest
+2026-01-28 22:03:23.668 | [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s - in com.github.mauricioaniche.ck.EnumTest
+2026-01-28 22:03:23.668 | [INFO] Running com.github.mauricioaniche.ck.FieldsAccessedTest
+2026-01-28 22:03:23.747 | [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.github.mauricioaniche.ck.FieldsAccessedTest
+2026-01-28 22:03:23.747 | [INFO] Running com.github.mauricioaniche.ck.FieldsTest
+2026-01-28 22:03:23.792 | [INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.github.mauricioaniche.ck.FieldsTest
+2026-01-28 22:03:23.793 | [INFO] Running com.github.mauricioaniche.ck.FieldUsageTest
+2026-01-28 22:03:23.867 | [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.github.mauricioaniche.ck.FieldUsageTest
+2026-01-28 22:03:23.868 | [INFO] Running com.github.mauricioaniche.ck.GenericsTest
+2026-01-28 22:03:23.931 | [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in com.github.mauricioaniche.ck.GenericsTest
+2026-01-28 22:03:23.934 | [INFO] Running com.github.mauricioaniche.ck.IndividualFilesWithContextTest
+2026-01-28 22:03:27.019 | [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.056 s - in com.github.mauricioaniche.ck.IndividualFilesWithContextTest
+2026-01-28 22:03:27.019 | [INFO] Running com.github.mauricioaniche.ck.integration.IntegrationTest
+2026-01-28 22:04:26.294 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.265 s - in com.github.mauricioaniche.ck.integration.IntegrationTest
+2026-01-28 22:04:26.295 | [INFO] Running com.github.mauricioaniche.ck.Java11SupportTest
+2026-01-28 22:04:26.329 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.github.mauricioaniche.ck.Java11SupportTest
+2026-01-28 22:04:26.329 | [INFO] Running com.github.mauricioaniche.ck.JavadocLinesTest
+2026-01-28 22:04:26.423 | [INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in com.github.mauricioaniche.ck.JavadocLinesTest
+2026-01-28 22:04:26.424 | [INFO] Running com.github.mauricioaniche.ck.JDTUtilsTest
+2026-01-28 22:04:26.466 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.github.mauricioaniche.ck.JDTUtilsTest
+2026-01-28 22:04:26.467 | [INFO] Running com.github.mauricioaniche.ck.LCOMNormalizedTest
+2026-01-28 22:04:26.542 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.github.mauricioaniche.ck.LCOMNormalizedTest
+2026-01-28 22:04:26.542 | [INFO] Running com.github.mauricioaniche.ck.LCOMTest
+2026-01-28 22:04:26.608 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in com.github.mauricioaniche.ck.LCOMTest
+2026-01-28 22:04:26.609 | [INFO] Running com.github.mauricioaniche.ck.LocalFieldsAccessedTest
+2026-01-28 22:04:26.651 | [INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in com.github.mauricioaniche.ck.LocalFieldsAccessedTest
+2026-01-28 22:04:26.652 | [INFO] Running com.github.mauricioaniche.ck.LocalFieldsTest
+2026-01-28 22:04:26.694 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.github.mauricioaniche.ck.LocalFieldsTest
+2026-01-28 22:04:26.694 | [INFO] Running com.github.mauricioaniche.ck.LOCTest
+2026-01-28 22:04:26.931 | [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 s - in com.github.mauricioaniche.ck.LOCTest
+2026-01-28 22:04:26.931 | [INFO] Running com.github.mauricioaniche.ck.LooseClassCohesionTest
+2026-01-28 22:04:36.088 | [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.146 s - in com.github.mauricioaniche.ck.LooseClassCohesionTest
+2026-01-28 22:04:36.088 | [INFO] Running com.github.mauricioaniche.ck.MethodInvocationsTest
+2026-01-28 22:04:36.135 | [INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in com.github.mauricioaniche.ck.MethodInvocationsTest
+2026-01-28 22:04:36.136 | [INFO] Running com.github.mauricioaniche.ck.MethodsDetailsTest
+2026-01-28 22:04:36.167 | [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.github.mauricioaniche.ck.MethodsDetailsTest
+2026-01-28 22:04:36.167 | [INFO] Running com.github.mauricioaniche.ck.MethodsTest
+2026-01-28 22:04:36.234 | [INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in com.github.mauricioaniche.ck.MethodsTest
+2026-01-28 22:04:36.235 | [INFO] Running com.github.mauricioaniche.ck.MetricsPerClassesAndInnerClassesTest
+2026-01-28 22:04:36.283 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in com.github.mauricioaniche.ck.MetricsPerClassesAndInnerClassesTest
+2026-01-28 22:04:36.283 | [INFO] Running com.github.mauricioaniche.ck.ModifiersTest
+2026-01-28 22:04:36.311 | [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.github.mauricioaniche.ck.ModifiersTest
+2026-01-28 22:04:36.312 | [INFO] Running com.github.mauricioaniche.ck.NOCTest
+2026-01-28 22:04:36.366 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in com.github.mauricioaniche.ck.NOCTest
+2026-01-28 22:04:36.367 | [INFO] Running com.github.mauricioaniche.ck.NOSITest
+2026-01-28 22:04:36.405 | [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in com.github.mauricioaniche.ck.NOSITest
+2026-01-28 22:04:36.406 | [INFO] Running com.github.mauricioaniche.ck.NumberOfAssignmentsTest
+2026-01-28 22:04:36.434 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.github.mauricioaniche.ck.NumberOfAssignmentsTest
+2026-01-28 22:04:36.435 | [INFO] Running com.github.mauricioaniche.ck.NumberOfComparisonsTest
+2026-01-28 22:04:36.468 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in com.github.mauricioaniche.ck.NumberOfComparisonsTest
+2026-01-28 22:04:36.468 | [INFO] Running com.github.mauricioaniche.ck.NumberOfInnerClassesLambdasAndAnonymousClassesTest
+2026-01-28 22:04:36.515 | [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in com.github.mauricioaniche.ck.NumberOfInnerClassesLambdasAndAnonymousClassesTest
+2026-01-28 22:04:36.516 | [INFO] Running com.github.mauricioaniche.ck.NumberOfLogStatementsTest
+2026-01-28 22:04:36.574 | [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in com.github.mauricioaniche.ck.NumberOfLogStatementsTest
+2026-01-28 22:04:36.577 | [INFO] Running com.github.mauricioaniche.ck.NumberOfLoopsTest
+2026-01-28 22:04:36.623 | [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.github.mauricioaniche.ck.NumberOfLoopsTest
+2026-01-28 22:04:36.623 | [INFO] Running com.github.mauricioaniche.ck.NumberOfMathOperationsTest
+2026-01-28 22:04:36.657 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in com.github.mauricioaniche.ck.NumberOfMathOperationsTest
+2026-01-28 22:04:36.658 | [INFO] Running com.github.mauricioaniche.ck.NumberOfMaxNestedBlocksTest
+2026-01-28 22:04:36.818 | [INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in com.github.mauricioaniche.ck.NumberOfMaxNestedBlocksTest
+2026-01-28 22:04:36.819 | [INFO] Running com.github.mauricioaniche.ck.NumberOfNumbersTest
+2026-01-28 22:04:36.853 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.github.mauricioaniche.ck.NumberOfNumbersTest
+2026-01-28 22:04:36.854 | [INFO] Running com.github.mauricioaniche.ck.NumberOfParenthesisTest
+2026-01-28 22:04:36.889 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in com.github.mauricioaniche.ck.NumberOfParenthesisTest
+2026-01-28 22:04:36.890 | [INFO] Running com.github.mauricioaniche.ck.NumberOfReturnsTest
+2026-01-28 22:04:36.928 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in com.github.mauricioaniche.ck.NumberOfReturnsTest
+2026-01-28 22:04:36.928 | [INFO] Running com.github.mauricioaniche.ck.NumberOfStringsTest
+2026-01-28 22:04:36.962 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.github.mauricioaniche.ck.NumberOfStringsTest
+2026-01-28 22:04:36.962 | [INFO] Running com.github.mauricioaniche.ck.NumberOfTryCatchesTest
+2026-01-28 22:04:37.005 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.github.mauricioaniche.ck.NumberOfTryCatchesTest
+2026-01-28 22:04:37.006 | [INFO] Running com.github.mauricioaniche.ck.NumberOfVariablesTest
+2026-01-28 22:04:37.069 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in com.github.mauricioaniche.ck.NumberOfVariablesTest
+2026-01-28 22:04:37.069 | [INFO] Running com.github.mauricioaniche.ck.ParametersTest
+2026-01-28 22:04:37.141 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in com.github.mauricioaniche.ck.ParametersTest
+2026-01-28 22:04:37.142 | [INFO] Running com.github.mauricioaniche.ck.realworld.HugeRealWorldClassTest
+2026-01-28 22:04:46.124 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.973 s - in com.github.mauricioaniche.ck.realworld.HugeRealWorldClassTest
+2026-01-28 22:04:46.124 | [INFO] Running com.github.mauricioaniche.ck.realworld.RealWorldClassesTest
+2026-01-28 22:04:46.543 | - variable: rec
+2026-01-28 22:04:46.543 | - variable: records
+2026-01-28 22:04:46.543 | - variable: charset
+2026-01-28 22:04:46.543 | - variable: format
+2026-01-28 22:04:46.543 | - variable: url
+2026-01-28 22:04:46.544 | - variable: reader
+2026-01-28 22:04:46.544 | - variable: format
+2026-01-28 22:04:46.544 | - variable: formatHeader
+2026-01-28 22:04:46.544 | - variable: headerRecord
+2026-01-28 22:04:46.544 | - variable: hdrMap
+2026-01-28 22:04:46.544 | - variable: i
+2026-01-28 22:04:46.544 | - variable: header
+2026-01-28 22:04:46.544 | - variable: containsHeader
+2026-01-28 22:04:46.544 | - variable: nextRecord
+2026-01-28 22:04:46.545 | - variable: emptyHeader
+2026-01-28 22:04:46.545 | - variable: string
+2026-01-28 22:04:46.545 | - variable: format
+2026-01-28 22:04:46.545 | - variable: charset
+2026-01-28 22:04:46.545 | - variable: file
+2026-01-28 22:04:46.545 | - variable: format
+2026-01-28 22:04:46.545 | - variable: result
+2026-01-28 22:04:46.545 | - variable: comment
+2026-01-28 22:04:46.545 | - variable: sb
+2026-01-28 22:04:46.545 | - variable: input
+2026-01-28 22:04:46.546 | - variable: nullString
+2026-01-28 22:04:46.562 | [INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s - in com.github.mauricioaniche.ck.realworld.RealWorldClassesTest
+2026-01-28 22:04:46.562 | [INFO] Running com.github.mauricioaniche.ck.RFCTest
+2026-01-28 22:04:46.616 | [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.github.mauricioaniche.ck.RFCTest
+2026-01-28 22:04:46.616 | [INFO] Running com.github.mauricioaniche.ck.TightClassCohesionTest
+2026-01-28 22:04:55.205 | [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.574 s - in com.github.mauricioaniche.ck.TightClassCohesionTest
+2026-01-28 22:04:55.206 | [INFO] Running com.github.mauricioaniche.ck.util.DependencySorterTest
+2026-01-28 22:04:55.452 | [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 s - in com.github.mauricioaniche.ck.util.DependencySorterTest
+2026-01-28 22:04:55.452 | [INFO] Running com.github.mauricioaniche.ck.util.FileUtilsTest
+2026-01-28 22:04:55.471 | [WARNING] Tests run: 10, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.007 s - in com.github.mauricioaniche.ck.util.FileUtilsTest
+2026-01-28 22:04:55.472 | [INFO] Running com.github.mauricioaniche.ck.util.LOCCalculatorTest
+2026-01-28 22:04:55.484 | [INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.util.LOCCalculatorTest
+2026-01-28 22:04:55.485 | [INFO] Running com.github.mauricioaniche.ck.util.WordCounterTest
+2026-01-28 22:04:55.497 | [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.util.WordCounterTest
+2026-01-28 22:04:55.498 | [INFO] Running com.github.mauricioaniche.ck.VariableNameExtractionTest
+2026-01-28 22:04:55.511 | [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.mauricioaniche.ck.VariableNameExtractionTest
+2026-01-28 22:04:55.511 | [INFO] Running com.github.mauricioaniche.ck.VariableOrParameterUsageCountTest
+2026-01-28 22:04:55.544 | [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in com.github.mauricioaniche.ck.VariableOrParameterUsageCountTest
+2026-01-28 22:04:55.545 | [INFO] Running com.github.mauricioaniche.ck.VisibleMethodsTest
+2026-01-28 22:04:55.576 | [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.github.mauricioaniche.ck.VisibleMethodsTest
+2026-01-28 22:04:55.576 | [INFO] Running com.github.mauricioaniche.ck.WMCTest
+2026-01-28 22:04:55.663 | [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in com.github.mauricioaniche.ck.WMCTest
+2026-01-28 22:04:55.663 | [INFO] Running com.github.mauricioaniche.ck.WordCountsTest
+2026-01-28 22:04:55.705 | [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in com.github.mauricioaniche.ck.WordCountsTest
+2026-01-28 22:05:00.099 | [INFO] 
+2026-01-28 22:05:00.099 | [INFO] Results:
+2026-01-28 22:05:00.099 | [INFO] 
+2026-01-28 22:05:00.099 | [WARNING] Tests run: 295, Failures: 0, Errors: 0, Skipped: 4
+2026-01-28 22:05:00.100 | [INFO] 
+2026-01-28 22:05:00.149 | [INFO] 
+2026-01-28 22:05:00.149 | [INFO] --- jacoco-maven-plugin:0.8.7:report (report) @ ck ---
+2026-01-28 22:05:00.159 | [INFO] Loading execution data file /workspace/guava-static-analysis/ck/target/jacoco.exec
+2026-01-28 22:05:01.499 | [INFO] Analyzed bundle 'CK calculator' with 56 classes
+2026-01-28 22:05:03.553 | [INFO] 
+2026-01-28 22:05:03.554 | [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ck ---
+2026-01-28 22:05:06.651 | [INFO] Building jar: /workspace/guava-static-analysis/ck/target/ck-0.7.1-SNAPSHOT.jar
+2026-01-28 22:05:08.300 | [INFO] 
+2026-01-28 22:05:08.300 | [INFO] --- maven-assembly-plugin:2.2-beta-5:single (default) @ ck ---
+2026-01-28 22:05:10.962 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:10.962 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:10.962 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.057 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.057 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.057 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.081 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.081 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.081 | [INFO] META-INF/eclipse.inf already added, skipping
+2026-01-28 22:05:11.081 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.081 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.082 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.082 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.083 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.084 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.085 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.089 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.089 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.089 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.089 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.090 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.091 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.091 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.091 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.092 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.092 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.093 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.095 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.095 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.095 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.095 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.096 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.096 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.096 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.096 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.096 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.097 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.097 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.126 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.126 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.126 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.127 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.130 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.130 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:11.131 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.131 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.132 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.133 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.136 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.137 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.137 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.137 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.137 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.138 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.138 | [INFO] org/eclipse/core/internal/runtime/ already added, skipping
+2026-01-28 22:05:11.138 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:11.138 | [INFO] org/eclipse/equinox/ already added, skipping
+2026-01-28 22:05:11.139 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.139 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.139 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.140 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.142 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.143 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.144 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.145 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.146 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.147 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.148 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:11.148 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.149 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.149 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.149 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.149 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.153 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.154 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.154 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.154 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.155 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.155 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.155 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:11.156 | [INFO] about_files/ already added, skipping
+2026-01-28 22:05:11.156 | [INFO] about_files/LICENSE-2.0.txt already added, skipping
+2026-01-28 22:05:11.156 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.156 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.157 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.157 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.157 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.160 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.160 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.160 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.161 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.161 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.162 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.162 | [INFO] org/eclipse/core/internal/preferences/ already added, skipping
+2026-01-28 22:05:11.162 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:11.163 | [INFO] about_files/ already added, skipping
+2026-01-28 22:05:11.164 | [INFO] about_files/LICENSE-2.0.txt already added, skipping
+2026-01-28 22:05:11.165 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.165 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.166 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.167 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.168 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.170 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.170 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.170 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.171 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.171 | [INFO] org/osgi/ already added, skipping
+2026-01-28 22:05:11.172 | [INFO] org/osgi/service/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.175 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:11.175 | [INFO] META-INF/NOTICE already added, skipping
+2026-01-28 22:05:11.175 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] META-INF/maven/org.osgi/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] OSGI-OPT/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] OSGI-OPT/src/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] OSGI-OPT/src/org/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] OSGI-OPT/src/org/osgi/ already added, skipping
+2026-01-28 22:05:11.175 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.177 | [INFO] org/osgi/ already added, skipping
+2026-01-28 22:05:11.179 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.180 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.181 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.181 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.181 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.182 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.182 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:11.182 | [INFO] OSGI-INF/ already added, skipping
+2026-01-28 22:05:11.184 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.184 | [INFO] .options already added, skipping
+2026-01-28 22:05:11.184 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.184 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.184 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.187 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.187 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.188 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.188 | [INFO] org/osgi/ already added, skipping
+2026-01-28 22:05:11.188 | [INFO] org/osgi/service/ already added, skipping
+2026-01-28 22:05:11.188 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.188 | [INFO] org/eclipse/equinox/ already added, skipping
+2026-01-28 22:05:11.189 | [INFO] about_files/ already added, skipping
+2026-01-28 22:05:11.189 | [INFO] about_files/LICENSE-2.0.txt already added, skipping
+2026-01-28 22:05:11.189 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.189 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.189 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.189 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.191 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.191 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.191 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.192 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.192 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.192 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.192 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.194 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.194 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.194 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:11.200 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.200 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.201 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:11.253 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.253 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.253 | [INFO] com/ already added, skipping
+2026-01-28 22:05:11.253 | [INFO] com/sun/ already added, skipping
+2026-01-28 22:05:11.254 | [INFO] com/sun/jna/ already added, skipping
+2026-01-28 22:05:11.254 | [INFO] META-INF/AL2.0 already added, skipping
+2026-01-28 22:05:11.254 | [INFO] META-INF/LGPL2.1 already added, skipping
+2026-01-28 22:05:11.254 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:11.264 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.265 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.266 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.267 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.267 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.267 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.267 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.272 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.273 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.273 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.273 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:11.273 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:11.274 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:11.274 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:11.274 | [INFO] about.html already added, skipping
+2026-01-28 22:05:11.274 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:11.351 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.351 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.351 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.351 | [INFO] com/ already added, skipping
+2026-01-28 22:05:11.354 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.354 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.354 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.357 | [INFO] META-INF/maven/com.google.guava/ already added, skipping
+2026-01-28 22:05:11.357 | [INFO] com/ already added, skipping
+2026-01-28 22:05:11.357 | [INFO] com/google/ already added, skipping
+2026-01-28 22:05:11.359 | [INFO] com/google/common/ already added, skipping
+2026-01-28 22:05:11.360 | [INFO] com/google/common/util/ already added, skipping
+2026-01-28 22:05:11.361 | [INFO] com/google/common/util/concurrent/ already added, skipping
+2026-01-28 22:05:11.362 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.362 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.363 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.363 | [INFO] META-INF/maven/com.google.guava/ already added, skipping
+2026-01-28 22:05:11.366 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.366 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.366 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.381 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.381 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.381 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.383 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.383 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.384 | [INFO] com/ already added, skipping
+2026-01-28 22:05:11.385 | [INFO] com/google/ already added, skipping
+2026-01-28 22:05:11.385 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.387 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.387 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.387 | [INFO] com/ already added, skipping
+2026-01-28 22:05:11.387 | [INFO] com/google/ already added, skipping
+2026-01-28 22:05:11.387 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.389 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.389 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.389 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.389 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:11.389 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.392 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.392 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.392 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.392 | [INFO] org/slf4j/ already added, skipping
+2026-01-28 22:05:11.392 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.393 | [INFO] META-INF/maven/org.slf4j/ already added, skipping
+2026-01-28 22:05:11.405 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.405 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.405 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:11.406 | [INFO] META-INF/NOTICE already added, skipping
+2026-01-28 22:05:11.406 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.406 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.406 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:11.407 | [INFO] org/apache/log4j/ already added, skipping
+2026-01-28 22:05:11.415 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.415 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.415 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.415 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:11.417 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.419 | [INFO] META-INF/LICENSE.txt already added, skipping
+2026-01-28 22:05:11.432 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.432 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.432 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.432 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:11.433 | [INFO] org/apache/commons/ already added, skipping
+2026-01-28 22:05:11.433 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.433 | [INFO] META-INF/LICENSE.txt already added, skipping
+2026-01-28 22:05:11.434 | [INFO] META-INF/NOTICE.txt already added, skipping
+2026-01-28 22:05:11.436 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:11.436 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:11.436 | [INFO] org/ already added, skipping
+2026-01-28 22:05:11.438 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:11.439 | [INFO] org/apache/commons/ already added, skipping
+2026-01-28 22:05:11.439 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:11.440 | [INFO] META-INF/maven/org.apache.commons/ already added, skipping
+2026-01-28 22:05:11.440 | [INFO] META-INF/LICENSE.txt already added, skipping
+2026-01-28 22:05:11.441 | [INFO] META-INF/NOTICE.txt already added, skipping
+2026-01-28 22:05:13.370 | [INFO] Building jar: /workspace/guava-static-analysis/ck/target/ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar
+2026-01-28 22:05:14.007 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:14.007 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:14.007 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:15.151 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:15.151 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:15.257 | [INFO] org/ already added, skipping
+2026-01-28 22:05:22.273 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:22.274 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:22.275 | [INFO] META-INF/eclipse.inf already added, skipping
+2026-01-28 22:05:22.275 | [INFO] org/ already added, skipping
+2026-01-28 22:05:22.275 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:23.361 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:23.361 | [INFO] .options already added, skipping
+2026-01-28 22:05:23.361 | [INFO] about.html already added, skipping
+2026-01-28 22:05:23.361 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:23.361 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:23.364 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:23.364 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:23.364 | [INFO] org/ already added, skipping
+2026-01-28 22:05:23.364 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:23.364 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:23.428 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:23.504 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:23.504 | [INFO] .options already added, skipping
+2026-01-28 22:05:23.504 | [INFO] about.html already added, skipping
+2026-01-28 22:05:23.504 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:23.504 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:23.506 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:23.506 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:23.506 | [INFO] org/ already added, skipping
+2026-01-28 22:05:23.506 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:23.506 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:23.507 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:23.598 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:23.598 | [INFO] .options already added, skipping
+2026-01-28 22:05:23.599 | [INFO] about.html already added, skipping
+2026-01-28 22:05:23.599 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:23.599 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:23.625 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:23.625 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:23.659 | [INFO] org/ already added, skipping
+2026-01-28 22:05:23.659 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:23.660 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:23.660 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:25.858 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:25.862 | [INFO] .options already added, skipping
+2026-01-28 22:05:25.902 | [INFO] about.html already added, skipping
+2026-01-28 22:05:25.902 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:25.909 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:25.910 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:25.910 | [INFO] org/ already added, skipping
+2026-01-28 22:05:25.910 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:25.910 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:25.911 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:25.925 | [INFO] org/eclipse/core/internal/runtime/ already added, skipping
+2026-01-28 22:05:26.015 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:26.117 | [INFO] org/eclipse/equinox/ already added, skipping
+2026-01-28 22:05:26.121 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:26.121 | [INFO] .options already added, skipping
+2026-01-28 22:05:26.122 | [INFO] about.html already added, skipping
+2026-01-28 22:05:26.122 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:26.124 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:26.124 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:26.124 | [INFO] org/ already added, skipping
+2026-01-28 22:05:26.124 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:26.124 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:26.125 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:26.219 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:26.262 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:26.262 | [INFO] .options already added, skipping
+2026-01-28 22:05:26.263 | [INFO] about.html already added, skipping
+2026-01-28 22:05:26.263 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:26.263 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:26.268 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:26.268 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:26.268 | [INFO] org/ already added, skipping
+2026-01-28 22:05:26.268 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:26.268 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:26.268 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:26.467 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:26.524 | [INFO] about_files/ already added, skipping
+2026-01-28 22:05:26.524 | [INFO] about_files/LICENSE-2.0.txt already added, skipping
+2026-01-28 22:05:26.526 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:26.526 | [INFO] .options already added, skipping
+2026-01-28 22:05:26.526 | [INFO] about.html already added, skipping
+2026-01-28 22:05:26.526 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:26.527 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:26.530 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:26.530 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:26.530 | [INFO] org/ already added, skipping
+2026-01-28 22:05:26.530 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:26.530 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:26.531 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:26.531 | [INFO] org/eclipse/core/internal/preferences/ already added, skipping
+2026-01-28 22:05:26.638 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:26.693 | [INFO] about_files/ already added, skipping
+2026-01-28 22:05:26.693 | [INFO] about_files/LICENSE-2.0.txt already added, skipping
+2026-01-28 22:05:26.694 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:26.694 | [INFO] .options already added, skipping
+2026-01-28 22:05:26.694 | [INFO] about.html already added, skipping
+2026-01-28 22:05:26.694 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:26.695 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:26.696 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:26.696 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:26.703 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:26.735 | [INFO] org/ already added, skipping
+2026-01-28 22:05:26.735 | [INFO] org/osgi/ already added, skipping
+2026-01-28 22:05:26.735 | [INFO] org/osgi/service/ already added, skipping
+2026-01-28 22:05:26.754 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:26.754 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:26.754 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:26.756 | [INFO] META-INF/NOTICE already added, skipping
+2026-01-28 22:05:26.756 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:26.756 | [INFO] META-INF/maven/org.osgi/ already added, skipping
+2026-01-28 22:05:26.764 | [INFO] OSGI-OPT/ already added, skipping
+2026-01-28 22:05:26.764 | [INFO] OSGI-OPT/src/ already added, skipping
+2026-01-28 22:05:26.765 | [INFO] OSGI-OPT/src/org/ already added, skipping
+2026-01-28 22:05:26.765 | [INFO] OSGI-OPT/src/org/osgi/ already added, skipping
+2026-01-28 22:05:26.830 | [INFO] org/ already added, skipping
+2026-01-28 22:05:26.830 | [INFO] org/osgi/ already added, skipping
+2026-01-28 22:05:26.909 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:26.909 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:26.909 | [INFO] org/ already added, skipping
+2026-01-28 22:05:26.910 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:26.910 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:26.910 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:27.010 | [INFO] org/eclipse/core/runtime/ already added, skipping
+2026-01-28 22:05:27.049 | [INFO] OSGI-INF/ already added, skipping
+2026-01-28 22:05:27.052 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:27.052 | [INFO] .options already added, skipping
+2026-01-28 22:05:27.052 | [INFO] about.html already added, skipping
+2026-01-28 22:05:27.053 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:27.053 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:27.055 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:27.055 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:27.055 | [INFO] org/ already added, skipping
+2026-01-28 22:05:27.055 | [INFO] org/osgi/ already added, skipping
+2026-01-28 22:05:27.056 | [INFO] org/osgi/service/ already added, skipping
+2026-01-28 22:05:27.076 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:27.076 | [INFO] org/eclipse/equinox/ already added, skipping
+2026-01-28 22:05:27.152 | [INFO] about_files/ already added, skipping
+2026-01-28 22:05:27.152 | [INFO] about_files/LICENSE-2.0.txt already added, skipping
+2026-01-28 22:05:27.152 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:27.152 | [INFO] about.html already added, skipping
+2026-01-28 22:05:27.152 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:27.152 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:27.154 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:27.154 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:27.154 | [INFO] org/ already added, skipping
+2026-01-28 22:05:27.154 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:27.154 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:27.187 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:27.261 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:27.261 | [INFO] about.html already added, skipping
+2026-01-28 22:05:27.261 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:27.261 | [INFO] plugin.xml already added, skipping
+2026-01-28 22:05:27.266 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:27.267 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:28.397 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:28.435 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:28.435 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:28.435 | [INFO] com/ already added, skipping
+2026-01-28 22:05:28.435 | [INFO] com/sun/ already added, skipping
+2026-01-28 22:05:28.435 | [INFO] com/sun/jna/ already added, skipping
+2026-01-28 22:05:28.466 | [INFO] META-INF/AL2.0 already added, skipping
+2026-01-28 22:05:28.466 | [INFO] META-INF/LGPL2.1 already added, skipping
+2026-01-28 22:05:28.466 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:31.328 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:31.328 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:31.328 | [INFO] org/ already added, skipping
+2026-01-28 22:05:31.328 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:31.851 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:31.851 | [INFO] about.html already added, skipping
+2026-01-28 22:05:31.851 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:31.855 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:31.855 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:31.855 | [INFO] org/ already added, skipping
+2026-01-28 22:05:31.855 | [INFO] org/eclipse/ already added, skipping
+2026-01-28 22:05:31.855 | [INFO] org/eclipse/core/ already added, skipping
+2026-01-28 22:05:32.048 | [INFO] org/eclipse/core/internal/ already added, skipping
+2026-01-28 22:05:32.059 | [INFO] .api_description already added, skipping
+2026-01-28 22:05:32.059 | [INFO] about.html already added, skipping
+2026-01-28 22:05:32.059 | [INFO] plugin.properties already added, skipping
+2026-01-28 22:05:32.111 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:32.111 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:32.111 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:32.121 | [INFO] com/ already added, skipping
+2026-01-28 22:05:37.053 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:37.053 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:37.054 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:37.054 | [INFO] META-INF/maven/com.google.guava/ already added, skipping
+2026-01-28 22:05:37.071 | [INFO] com/ already added, skipping
+2026-01-28 22:05:37.071 | [INFO] com/google/ already added, skipping
+2026-01-28 22:05:37.071 | [INFO] com/google/common/ already added, skipping
+2026-01-28 22:05:37.071 | [INFO] com/google/common/util/ already added, skipping
+2026-01-28 22:05:37.072 | [INFO] com/google/common/util/concurrent/ already added, skipping
+2026-01-28 22:05:37.085 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:37.085 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:37.085 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:37.085 | [INFO] META-INF/maven/com.google.guava/ already added, skipping
+2026-01-28 22:05:37.105 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:37.105 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:37.208 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:37.231 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:37.231 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:37.235 | [INFO] org/ already added, skipping
+2026-01-28 22:05:38.083 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:38.084 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:38.084 | [INFO] com/ already added, skipping
+2026-01-28 22:05:38.084 | [INFO] com/google/ already added, skipping
+2026-01-28 22:05:38.135 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:38.144 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:38.144 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:38.145 | [INFO] com/ already added, skipping
+2026-01-28 22:05:38.145 | [INFO] com/google/ already added, skipping
+2026-01-28 22:05:38.174 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:38.183 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:38.183 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:38.183 | [INFO] org/ already added, skipping
+2026-01-28 22:05:38.183 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:38.209 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:38.218 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:38.218 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:38.218 | [INFO] org/ already added, skipping
+2026-01-28 22:05:38.218 | [INFO] org/slf4j/ already added, skipping
+2026-01-28 22:05:38.303 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:38.303 | [INFO] META-INF/maven/org.slf4j/ already added, skipping
+2026-01-28 22:05:38.319 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:38.319 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:38.319 | [INFO] META-INF/LICENSE already added, skipping
+2026-01-28 22:05:38.321 | [INFO] META-INF/NOTICE already added, skipping
+2026-01-28 22:05:38.321 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:38.332 | [INFO] org/ already added, skipping
+2026-01-28 22:05:38.332 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:38.332 | [INFO] org/apache/log4j/ already added, skipping
+2026-01-28 22:05:39.300 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:39.300 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:39.300 | [INFO] org/ already added, skipping
+2026-01-28 22:05:39.300 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:39.325 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:39.330 | [INFO] META-INF/LICENSE.txt already added, skipping
+2026-01-28 22:05:39.806 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:39.806 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:39.806 | [INFO] org/ already added, skipping
+2026-01-28 22:05:39.807 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:39.808 | [INFO] org/apache/commons/ already added, skipping
+2026-01-28 22:05:39.857 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:39.864 | [INFO] META-INF/LICENSE.txt already added, skipping
+2026-01-28 22:05:39.864 | [INFO] META-INF/NOTICE.txt already added, skipping
+2026-01-28 22:05:40.748 | [INFO] META-INF/MANIFEST.MF already added, skipping
+2026-01-28 22:05:40.748 | [INFO] META-INF/ already added, skipping
+2026-01-28 22:05:40.752 | [INFO] org/ already added, skipping
+2026-01-28 22:05:40.753 | [INFO] org/apache/ already added, skipping
+2026-01-28 22:05:40.753 | [INFO] org/apache/commons/ already added, skipping
+2026-01-28 22:05:40.757 | [INFO] META-INF/maven/ already added, skipping
+2026-01-28 22:05:40.757 | [INFO] META-INF/maven/org.apache.commons/ already added, skipping
+2026-01-28 22:05:40.763 | [INFO] META-INF/LICENSE.txt already added, skipping
+2026-01-28 22:05:40.763 | [INFO] META-INF/NOTICE.txt already added, skipping
+2026-01-28 22:06:03.515 | [INFO] 
+2026-01-28 22:06:03.515 | [INFO] >>> maven-source-plugin:3.2.0:jar (attach-sources) > generate-sources @ ck >>>
+2026-01-28 22:06:03.608 | [INFO] 
+2026-01-28 22:06:03.608 | [INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ ck ---
+2026-01-28 22:06:03.611 | [INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/workspace/guava-static-analysis/ck/target/jacoco.exec
+2026-01-28 22:06:03.611 | [INFO] 
+2026-01-28 22:06:03.613 | [INFO] <<< maven-source-plugin:3.2.0:jar (attach-sources) < generate-sources @ ck <<<
+2026-01-28 22:06:03.613 | [INFO] 
+2026-01-28 22:06:03.613 | [INFO] 
+2026-01-28 22:06:03.614 | [INFO] --- maven-source-plugin:3.2.0:jar (attach-sources) @ ck ---
+2026-01-28 22:06:08.285 | [INFO] Building jar: /workspace/guava-static-analysis/ck/target/ck-0.7.1-SNAPSHOT-sources.jar
+2026-01-28 22:06:09.584 | [INFO] 
+2026-01-28 22:06:09.584 | [INFO] --- maven-javadoc-plugin:3.2.0:jar (attach-javadocs) @ ck ---
+2026-01-28 22:06:11.724 | [INFO] No previous run data found, generating javadoc.
+2026-01-28 22:06:18.073 | [WARNING] Javadoc Warnings
+2026-01-28 22:06:18.073 | [WARNING] Loading source files for package com.github.mauricioaniche.ck...
+2026-01-28 22:06:18.073 | [WARNING] Loading source files for package com.github.mauricioaniche.ck.metric...
+2026-01-28 22:06:18.074 | [WARNING] Loading source files for package com.github.mauricioaniche.ck.util...
+2026-01-28 22:06:18.074 | [WARNING] Constructing Javadoc information...
+2026-01-28 22:06:18.075 | [WARNING] warning: The code being documented uses packages in the unnamed module, but the packages defined in https://docs.oracle.com/en/java/javase/11/docs/api/ are in named modules.
+2026-01-28 22:06:18.076 | [WARNING] Building index for all the packages and classes...
+2026-01-28 22:06:18.076 | [WARNING] Standard Doclet version 17.0.18+8-LTS
+2026-01-28 22:06:18.077 | [WARNING] Building tree for all the packages and classes...
+2026-01-28 22:06:18.077 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/CBO.html...
+2026-01-28 22:06:18.078 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/CK.html...
+2026-01-28 22:06:18.079 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/CKASTVisitor.html...
+2026-01-28 22:06:18.079 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/CKClassResult.html...
+2026-01-28 22:06:18.080 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/CKMethodResult.html...
+2026-01-28 22:06:18.080 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/CKNotifier.html...
+2026-01-28 22:06:18.081 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/CKVisitor.html...
+2026-01-28 22:06:18.081 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/ClassLevelMetric.html...
+2026-01-28 22:06:18.082 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/ClassLevelWordCounter.html...
+2026-01-28 22:06:18.083 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/Coupling.html...
+2026-01-28 22:06:18.084 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/CouplingExtras.html...
+2026-01-28 22:06:18.085 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/DependencySorter.html...
+2026-01-28 22:06:18.085 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/DIT.html...
+2026-01-28 22:06:18.086 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/FileUtils.html...
+2026-01-28 22:06:18.087 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/JavadocLines.html...
+2026-01-28 22:06:18.087 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/JDTUtils.html...
+2026-01-28 22:06:18.089 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/LCOM.html...
+2026-01-28 22:06:18.089 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/LCOMNormalized.html...
+2026-01-28 22:06:18.090 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/LOCCalculator.html...
+2026-01-28 22:06:18.091 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/MethodInvocationsLocal.html...
+2026-01-28 22:06:18.092 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/MethodLevelFieldUsageCount.html...
+2026-01-28 22:06:18.093 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/MethodLevelMetric.html...
+2026-01-28 22:06:18.093 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/MethodLevelWordCounter.html...
+2026-01-28 22:06:18.094 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/MetricsExecutor.html...
+2026-01-28 22:06:18.095 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/MetricsFinder.html...
+2026-01-28 22:06:18.095 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NOC.html...
+2026-01-28 22:06:18.095 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NOCExtras.html...
+2026-01-28 22:06:18.096 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NOSI.html...
+2026-01-28 22:06:18.097 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfAssignments.html...
+2026-01-28 22:06:18.097 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfComparisons.html...
+2026-01-28 22:06:18.098 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfFields.html...
+2026-01-28 22:06:18.098 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfInnerClassesLambdasAndAnonymousClasses.html...
+2026-01-28 22:06:18.098 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfLogStatements.html...
+2026-01-28 22:06:18.099 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfLoops.html...
+2026-01-28 22:06:18.099 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfMathOperators.html...
+2026-01-28 22:06:18.100 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfMaxNestedBlock.html...
+2026-01-28 22:06:18.100 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfMethods.html...
+2026-01-28 22:06:18.100 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfNumbers.html...
+2026-01-28 22:06:18.102 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfParameters.html...
+2026-01-28 22:06:18.103 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfParenthesis.html...
+2026-01-28 22:06:18.104 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfReturns.html...
+2026-01-28 22:06:18.106 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfStringLiterals.html...
+2026-01-28 22:06:18.107 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfTryCatches.html...
+2026-01-28 22:06:18.107 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/NumberOfVariables.html...
+2026-01-28 22:06:18.109 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/ResultWriter.html...
+2026-01-28 22:06:18.109 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/RFC.html...
+2026-01-28 22:06:18.110 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/RunAfter.html...
+2026-01-28 22:06:18.110 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/Runner.html...
+2026-01-28 22:06:18.111 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/TightClassCohesion.html...
+2026-01-28 22:06:18.111 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/VariableOrFieldMetric.html...
+2026-01-28 22:06:18.112 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/VariableOrParameterUsageCount.html...
+2026-01-28 22:06:18.112 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/WMC.html...
+2026-01-28 22:06:18.113 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/WordCounter.html...
+2026-01-28 22:06:18.113 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/package-summary.html...
+2026-01-28 22:06:18.114 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/package-tree.html...
+2026-01-28 22:06:18.114 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/package-summary.html...
+2026-01-28 22:06:18.114 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/package-tree.html...
+2026-01-28 22:06:18.115 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/package-summary.html...
+2026-01-28 22:06:18.115 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/package-tree.html...
+2026-01-28 22:06:18.115 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/CK.html...
+2026-01-28 22:06:18.116 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/CKClassResult.html...
+2026-01-28 22:06:18.116 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/CKMethodResult.html...
+2026-01-28 22:06:18.117 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/CKNotifier.html...
+2026-01-28 22:06:18.118 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/CKVisitor.html...
+2026-01-28 22:06:18.118 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/MetricsExecutor.html...
+2026-01-28 22:06:18.119 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/ResultWriter.html...
+2026-01-28 22:06:18.120 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/class-use/Runner.html...
+2026-01-28 22:06:18.120 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/CBO.html...
+2026-01-28 22:06:18.122 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/CKASTVisitor.html...
+2026-01-28 22:06:18.123 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/ClassLevelMetric.html...
+2026-01-28 22:06:18.124 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/ClassLevelWordCounter.html...
+2026-01-28 22:06:18.126 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/Coupling.html...
+2026-01-28 22:06:18.128 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/CouplingExtras.html...
+2026-01-28 22:06:18.128 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/DIT.html...
+2026-01-28 22:06:18.130 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/JavadocLines.html...
+2026-01-28 22:06:18.131 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/LCOM.html...
+2026-01-28 22:06:18.132 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/LCOMNormalized.html...
+2026-01-28 22:06:18.132 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/MethodInvocationsLocal.html...
+2026-01-28 22:06:18.133 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/MethodLevelFieldUsageCount.html...
+2026-01-28 22:06:18.133 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/MethodLevelMetric.html...
+2026-01-28 22:06:18.134 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/MethodLevelWordCounter.html...
+2026-01-28 22:06:18.134 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NOC.html...
+2026-01-28 22:06:18.134 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NOCExtras.html...
+2026-01-28 22:06:18.135 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NOSI.html...
+2026-01-28 22:06:18.135 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfAssignments.html...
+2026-01-28 22:06:18.136 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfComparisons.html...
+2026-01-28 22:06:18.136 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfFields.html...
+2026-01-28 22:06:18.137 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfInnerClassesLambdasAndAnonymousClasses.html...
+2026-01-28 22:06:18.137 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfLogStatements.html...
+2026-01-28 22:06:18.137 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfLoops.html...
+2026-01-28 22:06:18.139 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfMathOperators.html...
+2026-01-28 22:06:18.139 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfMaxNestedBlock.html...
+2026-01-28 22:06:18.139 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfMethods.html...
+2026-01-28 22:06:18.140 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfNumbers.html...
+2026-01-28 22:06:18.140 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfParameters.html...
+2026-01-28 22:06:18.141 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfParenthesis.html...
+2026-01-28 22:06:18.141 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfReturns.html...
+2026-01-28 22:06:18.143 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfStringLiterals.html...
+2026-01-28 22:06:18.144 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfTryCatches.html...
+2026-01-28 22:06:18.147 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/NumberOfVariables.html...
+2026-01-28 22:06:18.149 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/RFC.html...
+2026-01-28 22:06:18.150 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/RunAfter.html...
+2026-01-28 22:06:18.151 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/TightClassCohesion.html...
+2026-01-28 22:06:18.152 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/VariableOrFieldMetric.html...
+2026-01-28 22:06:18.153 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/VariableOrParameterUsageCount.html...
+2026-01-28 22:06:18.153 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/class-use/WMC.html...
+2026-01-28 22:06:18.154 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/class-use/DependencySorter.html...
+2026-01-28 22:06:18.154 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/class-use/FileUtils.html...
+2026-01-28 22:06:18.155 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/class-use/JDTUtils.html...
+2026-01-28 22:06:18.155 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/class-use/LOCCalculator.html...
+2026-01-28 22:06:18.156 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/class-use/MetricsFinder.html...
+2026-01-28 22:06:18.156 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/class-use/WordCounter.html...
+2026-01-28 22:06:18.157 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/package-use.html...
+2026-01-28 22:06:18.157 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/metric/package-use.html...
+2026-01-28 22:06:18.158 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/com/github/mauricioaniche/ck/util/package-use.html...
+2026-01-28 22:06:18.158 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/overview-tree.html...
+2026-01-28 22:06:18.159 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/index.html...
+2026-01-28 22:06:18.159 | [WARNING] Building index for all classes...
+2026-01-28 22:06:18.160 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/allclasses-index.html...
+2026-01-28 22:06:18.160 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/allpackages-index.html...
+2026-01-28 22:06:18.161 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/index-all.html...
+2026-01-28 22:06:18.161 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/overview-summary.html...
+2026-01-28 22:06:18.162 | [WARNING] Generating /workspace/guava-static-analysis/ck/target/apidocs/help-doc.html...
+2026-01-28 22:06:18.162 | [WARNING] 1 warning
+2026-01-28 22:06:22.474 | [INFO] Building jar: /workspace/guava-static-analysis/ck/target/ck-0.7.1-SNAPSHOT-javadoc.jar
+2026-01-28 22:06:24.323 | [INFO] ------------------------------------------------------------------------
+2026-01-28 22:06:24.323 | [INFO] BUILD SUCCESS
+2026-01-28 22:06:24.324 | [INFO] ------------------------------------------------------------------------
+2026-01-28 22:06:24.324 | [INFO] Total time:  03:30 min
+2026-01-28 22:06:24.325 | [INFO] Finished at: 2026-01-29T04:06:24Z
+2026-01-28 22:06:24.326 | [INFO] ------------------------------------------------------------------------
+2026-01-28 22:08:42.991 | be5b287ecda9:/workspace/guava-static-analysis/ck# cd target/
+2026-01-28 22:09:21.148 | 
+2026-01-28 22:09:21.141 | be5b287ecda9:/workspace/guava-static-analysis/ck/target# java jar time java -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar ../../guava/guava/src/com/ false 0 false ../../results/time java -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar ../../guava/guava/src/com/ false 0 false ../../result
+2026-01-28 22:09:21.141 | ava -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar ../../guava/guava/src/com/ false 0 false ../../resulava -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar ../../guava/guava/src/com/ false 0 false ../../resultava -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar ../../guava/guava/src/com/ false 0 false ../../results/ava -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar ../../guava/guava/src/com/ false 0 false ../../results/ava -jar ck-0.7.1-SNAPSHOT-jar-with-dependencies.jar ../../guava/guava/src/com/ false 0 false ../../results/ 
+2026-01-28 22:09:21.141 | 
+2026-01-28 22:09:28.204 | 
+2026-01-28 22:09:28.208 | 11111
+2026-01-28 22:09:28.208 | time ck/
+2026-01-28 22:09:29.119 | 
+2026-01-28 22:09:29.125 | log4j:WARN No appenders could be found for logger (com.github.mauricioaniche.ck.CK).
+2026-01-28 22:09:29.119 | log4j:WARN Please initialize the log4j system properly.
+2026-01-28 22:09:29.119 | log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2026-01-28 22:09:56.736 | Metrics extracted!!!
+2026-01-28 22:09:56.873 | 
+2026-01-28 22:09:56.873 | real	0m28.669s
+2026-01-28 22:09:56.873 | user	1m2.150s
+2026-01-28 22:09:56.873 | sys	0m6.564s
