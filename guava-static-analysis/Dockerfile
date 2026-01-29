@@ -32,7 +32,7 @@ RUN mkdir -p /opt/tools \
 
 RUN git clone https://github.com/mauricioaniche/ck.git \
     && cd ck \
-    && ./mvn clean package
+    && ./mvnw clean package
 
 WORKDIR /workspace
 RUN mkdir -p guava config scripts results logs
