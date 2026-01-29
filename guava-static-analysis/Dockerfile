@@ -30,6 +30,10 @@ RUN mkdir -p /opt/tools \
  && curl -L -o /opt/tools/checkstyle-${CHECKSTYLE_VERSION}-all.jar \
     https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar
 
+RUN git clone https://github.com/mauricioaniche/ck.git \
+    && cd ck \
+    && ./mvn clean package
+
 WORKDIR /workspace
 RUN mkdir -p guava config scripts results logs
 
