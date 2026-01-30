@@ -1,0 +1,9 @@
+Linux cd716e5d3ace 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 Linux
+openjdk version "17.0.18" 2026-01-20 LTS
+OpenJDK Runtime Environment Corretto-17.0.18.8.1 (build 17.0.18+8-LTS)
+OpenJDK 64-Bit Server VM Corretto-17.0.18.8.1 (build 17.0.18+8-LTS, mixed mode, sharing)
+Missing required parameter: '<files>'
+Usage: checkstyle [OPTIONS]... FILES...
+Try 'checkstyle --help' for more information.
+bash: cd716e5d3ace:/workspacejava: No such file or directory
+Checkstyle version: 10.12.4
