@@ -4,7 +4,7 @@ Milestone: Milestone 2
 Team Members and Contributions:
 
 1. Chut Giet (rjb863)
-Contribution: 20%
+Contribution: 25%
 AI Usage: 
   Experiment 3 (Semgrep): 
         I used AI to better understand the 4 metrics that generated the findings 
@@ -15,7 +15,7 @@ Contribution: 25%
 AI Usage: I used the AI in the assignment to first get a better understanding of the tools and the materials. I also used AI to create and draft commands for the confirmation of checkstyles outputs.
 
 3. Samuel Olukuwu (nds091)
-Contribution: 20%
+Contribution: 25%
 AI Usage: 
   Experimentation 4 (CK):
         Used GPT to assist in installation of CK and explanation of
@@ -23,7 +23,7 @@ AI Usage:
 
 4. Haidari Alhaidari (vri968)
 Contribution: 
-  20%
+  25%
 AI Usage: 
   Experiment 1 (Introduction):
         Mainly borrowed from course documentation and README.md files
@@ -45,7 +45,7 @@ AI Usage:
 
 
 5. Ademola Obaleye (zyq049)
-Contribution: 20%
+Contribution: 25%
 AI Usage: I used chatGPT to better understand the assignment description and the use of checkstyle as a static analysis tool. 
 I used it to help debug docker and checkstyle related errors during setup and execution. 
 I used chatGPT to help generate grep commands for extracting useful information from checkstyle's XML output.
