@@ -4,8 +4,11 @@ Milestone: Milestone 2
 Team Members and Contributions:
 
 1. Chut Giet (rjb863)
-Contribution: 
+Contribution: 25%
 AI Usage: 
+  Experiment 3 (Semgrep): 
+        I used AI to better understand the 4 metrics that generated the findings 
+        and also better understand the guava project structure and codebase. 
 
 2. Chibuikem Emeka-Nwuba (esq498)
 Contribution: 25%
