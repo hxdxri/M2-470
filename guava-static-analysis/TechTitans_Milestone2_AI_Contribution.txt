@@ -17,7 +17,26 @@ AI Usage:
 
 4. Haidari Alhaidari (vri968)
 Contribution: 
+  25%
 AI Usage: 
+  Experiment 1 (Introduction):
+        Mainly borrowed from course documentation and README.md files
+        of tools and repositories. 
+  Experiment 3 (Semgrep) with Chut:
+        Executed all commands manually, piplined into log files,
+        verified my findings with Chut's.
+        Findings were reported and analysed by Chut.
+  Experimental Setup:
+        Generated skeleton using Codex, explaining my goals to have
+        git submodule reference within my repository. Debugged base image
+        issues I was having (ARM Architecture issues) using forums.
+  Report:
+        Compiled team members sections to form a uniform clear format.
+        Team meetings were recorded, then transcriped.
+        ChatGPT, given team meeting transcripts and findings, was used
+        to generate sections: Analysis and Discussion, Lessons Learned,
+        Conclusion. Verified alignmend of contents of each section.
+
 
 5. Ademola Obaleye (zyq049)
 Contribution: 
