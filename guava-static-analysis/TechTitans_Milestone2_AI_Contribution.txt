@@ -12,8 +12,11 @@ Contribution:
 AI Usage: 
 
 3. Samuel Olukuwu (nds091)
-Contribution: 
+Contribution: 25%
 AI Usage: 
+  Experimentation 4 (CK):
+        Used GPT to assisnt in installation of CK and explanation of
+        certain metrics. Also to provide the top 20 classes and their wmc metrics.
 
 4. Haidari Alhaidari (vri968)
 Contribution: 
